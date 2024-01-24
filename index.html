@@ -15,6 +15,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        legal: '#B68C5A',
+                    }
+                }
+            }
+        }
+    </script>
     <style>
         .poppins {
             font-family: 'Poppins', sans-serif;
@@ -52,7 +64,12 @@
                             <li><a>Item 3</a></li>
                         </ul>
                     </div>
-                    <a class="btn btn-ghost text-xl">daisyUI</a>
+                    <a class="btn btn-ghost text-xl">
+                        <div class="flex items-center">
+                            <img src="./images/logo.png" alt="">
+                            <h3 class="eb-garamond text-2xl font-extrabold">Justice</h3>
+                        </div>
+                    </a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal px-1">
@@ -96,8 +113,20 @@
                     </ul>
                 </div>
                 <div class="navbar-end">
-                    <a class="btn w-[220px]">Free Consultation</a>
+                    <a class="btn w-[220px] bg-legal text-white text-lg">Free Consultation</a>
                 </div>
+            </div>
+        </section>
+        <section class="container mx-auto pt-36">
+            <div class="text-center relative rounded-lg " style="background-image: url(./images/banner.png); height:550px; width:100%; background-repeat: no-repeat; background-position: center; background-size:cover; ">
+                    <div class="lg:w-[550px] w-auto mx-auto pt-28 space-y-6">
+                        <h2 class="text-center text-6xl text-white font-bold eb-garamond">We Provide Effective Legal Solutions</h2>
+                        <p class="poppins text-white text-center opacity-85">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                        <div class="flex lg:flex-row flex-col justify-center gap-2 items-center">
+                            <input type="search" class="lg:w-full h-11 bg-white border-0 rounded-md placeholder:pl-5" placeholder="search your services">
+                            <button class="btn bg-legal text-white text-lg w-32">Search</button>
+                        </div>
+                    </div>
             </div>
         </section>
     </header>
